@@ -1,7 +1,7 @@
 # App pages
 
 Support and privacy pages for the App Store listings (GitHub Pages, branch main, folder /).
-Each page holds all four languages; `lang.js` shows the visitor's (German by default), `#en` etc. pick one.
+Each page holds all its app's languages (de, en, fr, it; Kaliberfinder's also es); `lang.js` shows the visitor's (German by default), `#en` etc. pick one.
 
 - `kaliberfinder/` — Support URL
 - `kaliberfinder/privacy.html` — Privacy Policy URL

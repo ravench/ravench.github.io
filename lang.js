@@ -1,6 +1,7 @@
-// Shows the section in the visitor's language (de, en, fr, it); German when none fits.
+// Shows the section in the visitor's language, among the languages the page has (Kaliberfinder's pages
+// also have es); German when none fits.
 (function () {
-  var langs = ["de", "en", "fr", "it"];
+  var langs = Array.prototype.map.call(document.querySelectorAll("section[lang]"), function (s) { return s.lang; });
   function show(l) {
     document.querySelectorAll("section[lang]").forEach(function (s) { s.classList.toggle("on", s.lang === l); });
     document.querySelectorAll("nav.lang a").forEach(function (a) { a.classList.toggle("on", a.hash === "#" + l); });
